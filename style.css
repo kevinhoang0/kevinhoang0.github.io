@@ -1,0 +1,370 @@
+.container{
+    display: inline-block;
+}
+
+section{
+    min-height: 100vh;
+}
+
+.resume{
+    color: white;
+    position: absolute;
+    background-color: transparent;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 15px;
+    width: 62px;
+    text-transform: uppercase;
+    transform: translate(1350px, -180px);
+    border-radius: 5px;
+    padding: 7px 7px;
+    text-decoration: none;
+    border: 2px solid rgb(17, 103, 233);
+}
+
+.resume:hover {
+    border: 2px solid white;
+}
+
+.text{
+    font-size: 20px;
+    color: white;
+    letter-spacing: 5px;
+    font-family: monospace;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translate(900px, 350px);
+    animation:
+        typing 2s steps(27),
+        cursor .4s step-end infinite alternate
+}
+
+/* cursor blinking */
+@keyframes cursor{
+    50% {border-color: transparent;}
+}
+/* typing effect */
+@keyframes typing{
+    from {width: 0}
+}
+/* fade down */
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1 
+    }
+}
+
+body{
+    background-color: rgb(5, 14, 44);
+    min-height: 500vh;
+    margin:0;
+    padding:0;
+}
+
+img{
+    transform: translate(500px, -50px);
+    box-shadow: -20px 20px white;
+    animation: fade .5s;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 50px;
+    animation: fade .5s;
+}
+
+p{
+    font-family: monospace;
+    color: white;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.abouttext{
+    transform: translate(400px,100px);
+    width: 1100px;
+    font-size: 35px;
+}
+
+.name{
+    transform: translate(150px, 180px);
+}
+
+.about{
+    transform: translate(-400px, 100px);
+}
+
+.skills{
+    transform: translate(-450px, -100px);
+    place-items: center;
+}
+.skillstext{
+    transform: translate(400px, -100px);
+    font-size: 30px;
+    width: 300px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+.web{
+    background-color: white;
+    box-shadow: 5px 5px rgb(12, 32, 97);
+    height: 90px;
+    color: black;
+    transition: box-shadow .5s ease;
+}
+.app{
+    background-color: white;
+    box-shadow: 5px 5px rgb(12, 32, 97);
+    height: 90px;
+    color: black;
+    transition: box-shadow .5s ease;
+}
+
+.tech{
+    background-color: white;
+    box-shadow: 5px 5px rgb(12, 32, 97);
+    height: 90px;
+    color: black;
+    transition: box-shadow .5s ease;
+}
+.data{
+    background-color: white;
+    box-shadow: 5px 5px rgb(12, 32, 97);
+    height: 90px;
+    color: black;
+    transition: box-shadow .5s ease;
+}
+
+.web::after {
+    content: "-HTML \A -CSS \A -JavaScript";
+    white-space: pre;
+    position: absolute;
+    text-align: left;
+    top: 20%;
+    left: 105%;
+    transform: translate(25px, -78px);
+    color: rgb(12, 32, 97);
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+    transition: left 0.5s ease, opacity 0.5s ease;
+}
+
+.web:hover{
+    animation: float 5s ease-in-out infinite;
+    box-shadow: 300px 5px rgb(12, 32, 97);
+}
+
+.web:hover::after {
+    left: 100%;
+    opacity: 1;
+}
+
+.data::after {
+    content: "-SQL \A -NOSQL \A";
+    white-space: pre;
+    position: absolute;
+    text-align: left;
+    top: 20%;
+    left: 105%;
+    transform: translate(10px, 170px);
+    color: rgb(12, 32, 97);
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+    transition: left 0.5s ease, opacity 0.5s ease;
+}
+
+.data:hover{
+    animation: float 5s ease-in-out infinite;
+    box-shadow: 300px 5px rgb(12, 32, 97);
+}
+
+.data:hover::after {
+    left: 100%;
+    opacity: 1;
+}
+
+.tech::after {
+    content: "-github \A -Android Studio \A -VSCode \A -Unity";
+    white-space: pre;
+    position: absolute;
+    text-align: left;
+    top: 20%;
+    left: 105%;
+    transform: translate(10px, 273px);
+    color: rgb(12, 32, 97);
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+    transition: left 0.5s ease, opacity 0.5s ease;
+}
+
+.tech:hover{
+    animation: float 5s ease-in-out infinite;
+    box-shadow: 300px 5px rgb(12, 32, 97);
+}
+
+.tech:hover::after {
+    left: 100%;
+    opacity: 1;
+}
+
+.app::after {
+    content: "-Java \A -Python \A -C#";
+    white-space: pre;
+    position: absolute;
+    text-align: left;
+    top: 20%;
+    left: 105%;
+    transform: translate(10px, 44px);
+    color: rgb(12, 32, 97);
+    font-size: 20px;
+    color: white;
+    opacity: 0;
+    transition: left 0.5s ease, opacity 0.5s ease;
+}
+
+.app:hover{
+    animation: float 5s ease-in-out infinite;
+    box-shadow: 300px 5px rgb(12, 32, 97);
+}
+
+.app:hover::after {
+    left: 100%;
+    opacity: 1;
+}
+
+.columns{
+    display: flex;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 5px;
+}
+
+.column{
+    flex:1;
+    margin: 2px;
+    padding:  10px;
+    background: rgb(12, 32, 97);
+    transition: .3s;
+    height: 360px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+.columns2{
+    display: flex;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 5px;
+    transform: translate(0,-600px);
+}
+.column2{
+    flex:1;
+    margin: 2px;
+    padding:  10px;
+    background: rgb(12, 32, 97);
+    transition: .3s;
+    height: 360px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+
+.query{
+    font-size: 25px;
+}
+.querytext{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.link1{
+    color: white;
+    position: absolute;
+    background-color: transparent;
+    transform: translate(700px, 440px);
+    font-size: 2em;
+}
+.link1:hover{
+    color: rgb(0, 89, 255);
+}
+
+.link2{
+    color: white;
+    position: absolute;
+    background-color: transparent;
+    transform: translate(1100px, 440px);
+    font-size: 2em;
+}
+
+.link2:hover{
+    color: rgb(0, 89, 255);
+}
+
+
+.link4{
+    color: white;
+    position: absolute;
+    background-color: transparent;
+    transform: translate(349px, 335px);
+    font-size: 2em;
+}
+
+.link4:hover{
+    color: rgb(0, 89, 255);
+}
+
+
+.link5{
+    color: white;
+    position: absolute;
+    background-color: transparent;
+    transform: translate(749px, 335px);
+    font-size: 2em;
+}
+
+.link5:hover{
+    color: rgb(0, 89, 255);
+}
+
+
+.link6{
+    color: white;
+    position: absolute;
+    background-color: transparent;
+    transform: translate(1150px, 335px);
+    font-size: 2em;
+}
+
+.link6:hover{
+    color: rgb(0, 89, 255);
+}
+
+
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+}
+
