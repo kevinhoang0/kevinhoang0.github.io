@@ -16,12 +16,14 @@ section{
     font-size: 15px;
     width: 62px;
     text-transform: uppercase;
-    transform: translate(1350px, -180px);
     border-radius: 5px;
     padding: 7px 7px;
     text-decoration: none;
     border: 2px solid rgb(17, 103, 233);
+    top: 50px;
+    right: 50px;
 }
+
 
 .resume:hover {
     border: 2px solid white;
@@ -62,16 +64,16 @@ section{
 
 body{
     background-color: rgb(5, 14, 44);
-    min-height: 100vh;
-    margin:0;
-    padding:0;
 }
 
-img{
-    transform: translate(500px, -50px);
+img {
+    transform: translateX(500px);
+    min-width: 20%;
+    min-height: 20%;
     box-shadow: -20px 20px white;
     animation: fade .5s;
 }
+
 
 h1{
     text-align: center;
@@ -82,6 +84,7 @@ h1{
     letter-spacing: 3px;
     font-size: 50px;
     animation: fade .5s;
+    
 }
 
 p{
@@ -92,21 +95,24 @@ p{
 }
 
 .abouttext{
-    transform: translate(400px,100px);
-    width: 1100px;
+    margin-left:300px;
+    margin-right:300px;
     font-size: 35px;
 }
 
 .name{
-    transform: translate(150px, 180px);
+    transform: translate(900px, 180px);
+    text-align: justify;
+    width: auto;
+    height: auto;
 }
 
-.about{
-    transform: translate(-400px, 100px);
-}
+
 
 .skills{
-    transform: translate(-450px, -100px);
+    left: 450px;
+    top: 1750px;
+    position: absolute;
     place-items: center;
 }
 .skillstext{
@@ -300,7 +306,7 @@ p{
     color: white;
     position: absolute;
     background-color: transparent;
-    transform: translate(700px, 440px);
+    transform: translate(349px, -50px);
     font-size: 2em;
 }
 .link1:hover{
@@ -311,7 +317,7 @@ p{
     color: white;
     position: absolute;
     background-color: transparent;
-    transform: translate(1100px, 440px);
+    transform: translate(749px, -50px);
     font-size: 2em;
 }
 
